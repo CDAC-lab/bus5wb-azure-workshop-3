@@ -122,9 +122,9 @@ In this section you will use a python extraction module on the server to fill ou
 
 3. Choose Python File from File Templates
 
-4. Copy the contents of the custom Python Extraction Module in Pycharm and open the custom Python Extraction Module in Pycharm. The script can be found in [<em>process_image_files.py</em>](https://docs.microsoft.com/en-us/azure/storage/blobs/data-lake-storage-introduction)
+4. Copy the contents of the custom Python Extraction Module in Pycharm and open the custom Python Extraction Module in Pycharm. The script can be found in [<em>process_image_files.py</em>](https://github.com/CDAC-lab/BUS5WB-Azure-Workshop-3/)
 
-5.	On the script, the tag **Define function to invoke Computer Vision API**. You will need to change the function code to include the Computer Vision API details.
+5.	On the script you will have to change 4 variables as described in the steps below.
 
 6.	From the Azure Portal, retrieve the MDWComputerVision subscription key and base endpoint URL.
 
@@ -190,6 +190,27 @@ In this section you will create a CosmosDB linked service in Azure Data Factory.
 6.	Click **Test connection** to make sure you entered the correct connection details. You should see a “Connection successful” message above the button.
 
 7.	If the connection was successful, then click **Finish**. If you got an error message, please review the connection details above and try again.
+
+## Create SynapseDataLake Linked Service in Azure Data Factory
+
+1. In the Azure Data Factory portal and click the Author (pencil icon) option on the left-hand side panel. Under Connections tab, click Linked Services and then click + New to create a new linked service connection.
+
+    ![](./Media/Lab4-Image89.png)
+
+2. Create an Azure Blob Storage linked service connection.
+
+    ![](./Media/Lab4-Image90.png)
+
+3. On the New Linked Service (Azure Blob Storage) blade, enter the following details:
+    <br>- Name: synapsedatalake
+    <br>- Connect via integration runtime: AutoResolveIntegrationRuntime
+    <br>- Authentication method: Account key
+    <br>- Account selection method: From Azure subscription
+    <br>- Azure subscription: [your subscription]
+    <br>- Storage account name: synapsedatalakesuffix
+
+4. Click Test connection to make sure you entered the correct connection details and then click Finish.
+    ![](./Media/Lab4-Image84-create_link_service_synapselake.png)
 
 ## Create Azure Data Factory data sets.
 In this section you will create 4 Azure Data Factory data sets that will be used in the data pipeline.
@@ -348,7 +369,7 @@ Dataset | Role| Description
 
 17. Drag the previously created datasets into the **Lab4** folder you just created.
 
-    ![](./Media/Lab4-Image74.png)
+    ![](./Media/Lab4-Image86-new_datasets.png)
 
 18.	Publish your dataset changes by clicking the **Publish all** button.
 
