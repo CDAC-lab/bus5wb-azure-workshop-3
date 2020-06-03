@@ -126,8 +126,6 @@ In this section you will use a python extraction module on the server to fill ou
 
 5.	On the script, the tag **Define function to invoke Computer Vision API**. You will need to change the function code to include the Computer Vision API details.
 
-    ![](./Media/Lab4-Image12.png)
-
 6.	From the Azure Portal, retrieve the MDWComputerVision subscription key and base endpoint URL.
 
     ![](./Media/Lab4-Image13.jpg)
