@@ -1,5 +1,19 @@
-# Lab 4: Add AI to your Big Data Pipeline with Cognitive Services
-In this lab you will use Azure Data Factory to download New York City images to your data lake. Then, as part of the same pipeline, you are going to use an Azure Databricks notebook to invoke Computer Vision Cognitive Service to generate metadata documents and save them in back in your data lake. The Azure Data Factory pipeline then finishes by saving all metadata information in a Cosmos DB collection. You will use Power BI to visualise NYC images and their AI-generated metadata.
+# Azure Data Platform - Cognitive Services
+
+This tutorial will give you a hands on introduction to Microsoft Azure from the perspective of a Modern Data Analytics Platform by walking you through a use case for Cognitive Services. The tutorial is adopted from a 2 day workshop provided by Microsoft on their [Modern Data Analytics Platform](https://github.com/fabragaMS/ADPE2E).
+
+**IMPORTANT**:
+
+* The services covered in this course are only a subset of a much larger family of Azure services. Similar outcomes can be achieved by leveraging other services and/or features not covered by this workshop. Specific business requirements may also ask for the use of different services or features not included in this workshop.
+
+* Some concepts presented in this course can be quite complex and you may need to seek for more information from different sources to compliment your understanding of the Azure services covered.
+
+## Document Structure
+This document contains detailed step-by-step instructions on how to implement Cognitive Services in a Modern Data Platform architecture using Azure Data Services. It’s recommended you carefully read the detailed description contained in this document for a successful experience with all Azure services. 
+
+You will see the label **IMPORTANT** whenever a there is a critical step to the lab. Please pay close attention to the instructions given.
+
+## This Workshop
 
 In this workshop you will be making use of a custom pipeline to;
 1. Download images of New York City to your Data Lake
