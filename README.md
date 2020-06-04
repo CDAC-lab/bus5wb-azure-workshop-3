@@ -16,6 +16,7 @@ You will see the label **IMPORTANT** whenever a there is a critical step to the 
 ## This Workshop
 
 In this workshop you will be making use of a custom pipeline to;
+
 1. Download images of New York City to your Data Lake
 2. Generate metadata regarding the images using Computer Vision Cognitive Service and store them back in your Data Lake
 3. Transfer the metadata into Azure Cosmos DB for analysis
