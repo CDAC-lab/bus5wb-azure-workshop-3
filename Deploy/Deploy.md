@@ -97,4 +97,4 @@ In this section you will use automated deployment and ARM templates to automate 
 
 Some of the services still incur costs even when not running. If you don't want any extra charges associated with the lab resources you should delete the lab resource group and all resources in it.
 
-[Once you here to return to the main page](https://github.com/CDAC-lab/BUS5WB-Azure-Workshop-3).
+[Click you here to return to the main page once you have completed the deployment of the resouces](https://github.com/CDAC-lab/BUS5WB-Azure-Workshop-3).
