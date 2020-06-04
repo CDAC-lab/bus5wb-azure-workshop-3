@@ -57,6 +57,14 @@ adpcosmosdb-*suffix*	     |Cosmos DB account
 SynapseDataFactory-*suffix*	 |Data Factory (V2)
 synapsedatalake*suffix*	     |Storage Account
 
+### [Platform Provisioning](./Deploy/Deploy.md)
+
+In this section you will provision all Azure resources required to complete the tutorial. We will use a mix of pre-defined ARM templates as well as manual deployment to provision the services required.
+
+**IMPORTANT**: Please make sure to delete the Resource Group at the end of the Tutorial in order to avoid using up your Azure credits. We will be needing these credits for your assignment later on in the semester.
+
+[Please click here to deploy the resources needed for the workshop](./Deploy/Deploy.md).
+
 ## Create NYCImages and NYCImageMetadata Containers in Azure Blob Storage
 In this section you will create a container in your SynapseDataLake that will be used as a repository for the NYC image files.
 
