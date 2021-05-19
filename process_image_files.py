@@ -86,7 +86,7 @@ def CopyImages():
 
     container = ContainerClient.from_container_url(
         container_url="https://bus5wb.blob.core.windows.net/imagecollection",
-        credential="?st=2020-06-02T12%3A45%3A46Z&se=2020-07-02T12%3A45%3A00Z&sp=rl&sv=2018-03-28&sr=c&sig=EaT4rrzQoO%2FOe8yDWkibedUb2p58ixeOfHpqBEsu2FQ%3D"
+        credential="?st=2021-05-19T04%3A43%3A08Z&se=2022-05-20T04%3A43%3A00Z&sp=rl&sv=2018-03-28&sr=c&sig=yV19KD0EzGYQOecRpa2em6Fc6IRQ7%2FhowiAaO%2Bk70O4%3D"
     )
     container_client = ContainerClient.from_connection_string(connection_string, container_name=container_name_images)
 
