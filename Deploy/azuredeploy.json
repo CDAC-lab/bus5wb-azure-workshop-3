@@ -2,7 +2,10 @@
     "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
     "contentVersion": "1.0.0.0",
     "parameters": {},
-    "variables": {       
+    "variables": { 
+        
+        "UniqueSuffix":"[uniqueString(resourceGroup().id)]",
+        
         "ADPDataLakeStorageName":"[concat('synapsedatalake', substring(variables('UniqueSuffix'),0,5))]",
 
         "ADPDataFactoryName": "[concat('SynapseDataFactory-',substring(variables('UniqueSuffix'),0,5))]",
